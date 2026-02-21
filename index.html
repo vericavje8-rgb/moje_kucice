@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Residences - Premium Apartment Rentals</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🏛️ Luxe Residences</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a href="#apartments" class="nav-link dropdown-toggle">Apartments <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="pages/apartment-1bed.html" class="dropdown-link">Apartman Libera</a>
+                        <a href="pages/apartment-2bed.html" class="dropdown-link">Apartman Alvin</a>
+                        <a href="pages/apartment-3bed.html" class="dropdown-link">Apartman Tomas</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#apartments" class="dropdown-link">View All</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#amenities" class="nav-link">Amenities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#booking" class="nav-link">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Croatian Coastal Living</h1>
+            <p class="lead">Experience authentic Croatian hospitality in our carefully selected apartments near Novigrad's historic center. Where traditional charm meets modern comfort, and every detail reflects the beauty of the Istrian coast.</p>
+            <div class="hero-buttons">
+                <a href="#apartments" class="btn btn-primary">Explore Collection</a>
+                <a href="#booking" class="btn btn-secondary">Reserve Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cozy apartment interior">
+        </div>
+    </section>
+
+    <!-- Featured Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-building"></i>
+                    <h3>3</h3>
+                    <p>Available Apartments</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <h3>4.9</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3>500+</h3>
+                    <p>Happy Guests</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartments Section -->
+    <section id="apartments" class="apartments">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premier Collection</h2>
+                <p>Meticulously selected apartments that embody sophistication, comfort, and uncompromising quality</p>
+            </div>
+            
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Apartments</button>
+                <button class="filter-btn" data-filter="1bed">1 Bedroom</button>
+                <button class="filter-btn" data-filter="2bed">2 Bedroom</button>
+                <button class="filter-btn" data-filter="3bed">3+ Bedroom</button>
+            </div>
+
+            <div class="apartments-grid">
+                <!-- 1 Bedroom Apartment -->
+                <div class="apartment-card" data-category="1bed">
+                    <div class="apartment-image">
+                        <img src="assets/images/libera/imgi_115_78e0e9a3-b79e-4ad4-b11b-f96a8c5a8b6b.jpg" alt="Apartman Libera">
+                        <div class="apartment-badge">Available</div>
+                        <div class="apartment-price">€50/night</div>
+                    </div>
+                    <div class="apartment-info">
+                        <h3>Apartman Libera</h3>
+                        <p class="apartment-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Novigrad, Croatia
+                        </p>
+                        <div class="apartment-features">
+                            <span><i class="fas fa-bed"></i> 1 Bed</span>
+                            <span><i class="fas fa-shower"></i> 1 Bath</span>
+                            <span><i class="fas fa-expand-arrows-alt"></i> Sea view</span>
+                        </div>
+                        <div class="apartment-amenities">
+                            <span>WiFi</span>
+                            <span>Kitchen</span>
+                            <span>Sea View</span>
+                        </div>
+                        <div class="apartment-buttons">
+                            <a href="pages/apartment-1bed.html" class="btn btn-outline">View Details</a>
+                            <button class="btn btn-primary book-now" data-apartment="1bed1">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 Bedroom Apartment -->
+                <div class="apartment-card" data-category="2bed">
+                    <div class="apartment-image">
+                        <img src="assets/images/alvin/imgi_120_50c31fdd-4391-494e-ba3c-8e0683d2e25e.jpg" alt="Apartman Alvin">
+                        <div class="apartment-badge">Available</div>
+                        <div class="apartment-price">€60/night</div>
+                    </div>
+                    <div class="apartment-info">
+                        <h3>Apartman Alvin</h3>
+                        <p class="apartment-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Novigrad, Croatia
+                        </p>
+                        <div class="apartment-features">
+                            <span><i class="fas fa-bed"></i> 2 Bed</span>
+                            <span><i class="fas fa-shower"></i> 1 Bath</span>
+                            <span><i class="fas fa-tshirt"></i> Washing machine</span>
+                        </div>
+                        <div class="apartment-amenities">
+                            <span>WiFi</span>
+                            <span>Full Kitchen</span>
+                            <span>Sea View</span>
+                        </div>
+                        <div class="apartment-buttons">
+                            <a href="pages/apartment-2bed.html" class="btn btn-outline">View Details</a>
+                            <button class="btn btn-primary book-now" data-apartment="2bed1">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Bedroom Luxury -->
+                <div class="apartment-card" data-category="3bed">
+                    <div class="apartment-image">
+                        <img src="assets/images/tomas/imgi_125_ee8e98df-c9b9-4b36-8a97-2ba4b48c8b9b.jpg" alt="Apartman Tomas">
+                        <div class="apartment-badge featured">Featured</div>
+                        <div class="apartment-price">€80/night</div>
+                    </div>
+                    <div class="apartment-info">
+                        <h3>Apartman Tomas</h3>
+                        <p class="apartment-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Novigrad, Croatia
+                        </p>
+                        <div class="apartment-features">
+                            <span><i class="fas fa-bed"></i> 2 Bed + Living room</span>
+                            <span><i class="fas fa-shower"></i> 2 Bath</span>
+                            <span><i class="fas fa-tv"></i> HDTV</span>
+                        </div>
+                        <div class="apartment-amenities">
+                            <span>WiFi</span>
+                            <span>Living Room</span>
+                            <span>Garden Terrace</span>
+                        </div>
+                        <div class="apartment-buttons">
+                            <a href="pages/apartment-3bed.html" class="btn btn-outline">View Details</a>
+                            <button class="btn btn-primary book-now" data-apartment="3bed1">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Exclusive Amenities</h2>
+                <p>Unparalleled services and facilities designed to elevate your living experience</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>High-Speed WiFi</h3>
+                    <p>Stay connected with complimentary high-speed internet throughout your stay</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Climate Control</h3>
+                    <p>Individual temperature control to ensure your perfect comfort level</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Fully Equipped Kitchen</h3>
+                    <p>Complete kitchen with modern appliances and all necessary cookware</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Secure parking space available for all guests at no additional cost</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock assistance for any questions or concerns during your stay</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security System</h3>
+                    <p>Advanced security features including keyless entry and 24/7 monitoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability Calendar -->
+    <section id="calendar" class="availability">
+        <div class="container">
+            <div class="section-header">
+                <h2>Check Availability</h2>
+                <p>Select your dates to see available apartments and pricing</p>
+            </div>
+            <div class="calendar-container">
+                <div class="calendar-filters">
+                    <select id="apartmentSelect" class="form-select">
+                        <option value="">All Apartments</option>
+                        <option value="1bed1">Apartman Libera</option>
+                        <option value="2bed1">Apartman Alvin</option>
+                        <option value="3bed1">Apartman Tomas</option>
+                    </select>
+                    <div class="date-inputs">
+                        <input type="date" id="checkIn" class="form-input" placeholder="Check-in">
+                        <input type="date" id="checkOut" class="form-input" placeholder="Check-out">
+                        <button id="searchAvailability" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+                <div id="calendarGrid" class="calendar-grid">
+                    <div class="calendar-placeholder">
+                        <p>Select check-in and check-out dates to view availability</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reserve Your Stay</h2>
+                <p>Begin your exceptional journey with our seamless reservation experience</p>
+            </div>
+            <div class="booking-form-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="apartmentChoice">Choose Apartment</label>
+                        <select id="apartmentChoice" name="apartment" required class="form-select">
+                            <option value="">Select an apartment</option>
+                            <option value="1bed1">Apartman Libera - €50/night</option>
+                            <option value="2bed1">Apartman Alvin - €60/night</option>
+                            <option value="3bed1">Apartman Tomas - €80/night</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkInDate">Check-in Date</label>
+                            <input type="date" id="checkInDate" name="checkIn" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOutDate">Check-out Date</label>
+                            <input type="date" id="checkOutDate" name="checkOut" required class="form-input">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required class="form-select">
+                                <option value="">Select guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required class="form-input" placeholder="Your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required class="form-input" placeholder="Your last name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required class="form-input" placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required class="form-input" placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" name="requests" rows="4" class="form-textarea" placeholder="Any special requirements or requests..."></textarea>
+                    </div>
+
+                    <div id="bookingSummary" class="booking-summary" style="display: none;">
+                        <h3>Booking Summary</h3>
+                        <div class="summary-details"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Complete Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We're here to help make your stay perfect</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>Downtown District<br>
+                            123 Cozy Street<br>
+                            City Center, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567<br>
+                            Available 24/7</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>info@cozyapartments.com<br>
+                            bookings@cozyapartments.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required class="form-textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏛️ Luxe Residences</h3>
+                    <p>Setting the standard for sophisticated living, we curate extraordinary experiences through meticulously designed apartments that reflect our commitment to luxury, comfort, and unparalleled service excellence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#apartments">Apartments</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">House Rules</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@cozyapartments.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Cozy Street, City Center</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Residences. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apartment Detail Modal -->
+    <div id="apartmentModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalContent" class="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
