@@ -1,0 +1,234 @@
+/* ==========================================================================
+   REFINED ANIMATIONS & LOADING STATES
+   ========================================================================== */
+
+/* Global Loading Animation */
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Intersection Observer Animation Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s var(--ease-luxury);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll.slide-left {
+    transform: translateX(-30px);
+}
+
+.animate-on-scroll.slide-left.visible {
+    transform: translateX(0);
+}
+
+.animate-on-scroll.slide-right {
+    transform: translateX(30px);
+}
+
+.animate-on-scroll.slide-right.visible {
+    transform: translateX(0);
+}
+
+.animate-on-scroll.scale {
+    transform: scale(0.9);
+}
+
+.animate-on-scroll.scale.visible {
+    transform: scale(1);
+}
+
+/* Staggered Animations */
+.stagger-children > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s var(--ease-luxury);
+}
+
+.stagger-children.visible > *:nth-child(1) { transition-delay: 0.1s; }
+.stagger-children.visible > *:nth-child(2) { transition-delay: 0.2s; }
+.stagger-children.visible > *:nth-child(3) { transition-delay: 0.3s; }
+.stagger-children.visible > *:nth-child(4) { transition-delay: 0.4s; }
+.stagger-children.visible > *:nth-child(5) { transition-delay: 0.5s; }
+.stagger-children.visible > *:nth-child(6) { transition-delay: 0.6s; }
+
+.stagger-children.visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading States */
+.loading-skeleton {
+    background: var(--color-cool-gray);
+    border-radius: var(--radius-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-skeleton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        transparent 100%
+    );
+    animation: shimmerSkeleton 1.5s infinite;
+}
+
+@keyframes shimmerSkeleton {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Hover Glow Effects */
+.glow-on-hover {
+    transition: all var(--duration-normal) var(--ease-luxury);
+}
+
+.glow-on-hover:hover {
+    box-shadow: 
+        var(--shadow-xl),
+        0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+/* Floating Animation for Decorative Elements */
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Parallax Effect */
+.parallax {
+    transform: translateZ(0);
+    transition: transform 0.1s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-cool-gray);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    transition: background var(--duration-normal) ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-gold);
+}
+
+/* Focus States for Better Accessibility */
+.focus-visible {
+    outline: 3px solid rgba(212, 175, 55, 0.5);
+    outline-offset: 2px;
+    border-radius: var(--radius-md);
+}
+
+/* Responsive Text that Scales Smoothly */
+.fluid-text-lg {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}
+
+.fluid-text-xl {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+.fluid-text-2xl {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.fluid-text-3xl {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* Performance Optimizations */
+.gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Dark Mode Improvements */
+@media (prefers-color-scheme: dark) {
+    .loading-skeleton {
+        background: #2D3748;
+    }
+    
+    .loading-skeleton::before {
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.1) 50%,
+            transparent 100%
+        );
+    }
+}

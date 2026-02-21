@@ -1,0 +1,225 @@
+/* ==========================================================================
+   ADDITIONAL SECTIONS
+   ========================================================================== */
+
+/* Amenities Section */
+.amenities {
+    padding: var(--space-3xl) 0;
+    background: var(--color-white);
+    position: relative;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.amenity-card {
+    background: var(--bg-secondary);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--duration-normal) var(--ease-out);
+    border: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.amenity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.amenity-card i {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+    display: block;
+}
+
+.amenity-card h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.amenity-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Booking Section */
+.booking {
+    padding: var(--space-3xl) 0;
+    background: var(--bg-dark);
+    color: var(--color-white);
+    position: relative;
+}
+
+.booking::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+}
+
+.booking-form-container {
+    background: var(--color-white);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-luxury);
+    position: relative;
+}
+
+.booking-form {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-group label {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: var(--space-md);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    transition: all var(--duration-fast) var(--ease-out);
+    background: var(--color-white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.1);
+}
+
+.booking-summary {
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-primary-light);
+}
+
+/* Contact Section */
+.contact {
+    padding: var(--space-3xl) 0;
+    background: var(--color-white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-2xl);
+}
+
+.contact-info {
+    background: var(--bg-secondary);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.contact-item i {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: var(--space-xs);
+}
+
+.contact-item div h4 {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.contact-item div p {
+    color: var(--color-text-secondary);
+}
+
+/* Footer */
+.footer {
+    background: var(--color-secondary);
+    color: var(--color-text-inverse);
+    padding: var(--space-2xl) 0 var(--space-lg) 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.footer-section h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-md);
+    color: var(--color-primary-light);
+}
+
+.footer-section p,
+.footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease-out);
+}
+
+.footer-section a:hover {
+    color: var(--color-primary-light);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--space-md);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .amenities-grid,
+    .contact-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .booking-form-container {
+        padding: var(--space-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .amenity-card,
+    .contact-info {
+        padding: var(--space-lg);
+    }
+}

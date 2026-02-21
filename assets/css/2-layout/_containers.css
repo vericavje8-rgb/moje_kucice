@@ -1,0 +1,82 @@
+/* ==========================================================================
+   CONTAINER SYSTEM
+   ========================================================================== */
+
+/* Base Container */
+.container {
+    max-width: var(--container-xl);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    width: 100%;
+}
+
+/* Container Variations */
+.container--narrow {
+    max-width: var(--container-md);
+}
+
+.container--wide {
+    max-width: var(--container-2xl);
+}
+
+.container--fluid {
+    max-width: none;
+    padding: 0 var(--space-sm);
+}
+
+/* Responsive Container Padding */
+@media (min-width: 576px) {
+    .container {
+        padding: 0 var(--space-lg);
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 var(--space-xl);
+    }
+    
+    .container--fluid {
+        padding: 0 var(--space-md);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 var(--space-2xl);
+    }
+}
+
+/* Section Spacing */
+.section {
+    padding: var(--space-2xl) 0;
+}
+
+.section--sm {
+    padding: var(--space-xl) 0;
+}
+
+.section--lg {
+    padding: var(--space-3xl) 0;
+}
+
+.section--hero {
+    padding: calc(var(--space-3xl) + 60px) 0 var(--space-3xl) 0;
+    min-height: 100vh;
+}
+
+/* Responsive Section Spacing */
+@media (max-width: 768px) {
+    .section {
+        padding: var(--space-xl) 0;
+    }
+    
+    .section--lg {
+        padding: var(--space-2xl) 0;
+    }
+    
+    .section--hero {
+        padding: calc(var(--space-2xl) + 60px) 0 var(--space-xl) 0;
+        min-height: calc(100vh - 60px);
+    }
+}

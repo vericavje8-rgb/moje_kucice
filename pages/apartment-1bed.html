@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartman App1 - Luxe Residences</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -83,27 +83,39 @@
     </section>
 
     <!-- Gallery Section -->
-    <section class="apartment-gallery">
+    <section class="section">
         <div class="container">
-            <div class="gallery-grid">
-                <div class="main-image">
-                    <img src="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg" alt="Apartman App1 Living Area" id="main-gallery-image">
-                </div>
-                <div class="gallery-thumbnails">
-                    <div class="thumbnail active" data-image="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg">
-                        <img src="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg" alt="Living Area">
+            <div class="gallery">
+                <div class="gallery__grid">
+                    <div class="gallery__main">
+                        <img src="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg" alt="Apartman App1 Living Area" id="main-gallery-image" class="gallery__main-image">
+                        <button class="gallery__nav gallery__nav--prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery__nav gallery__nav--next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="gallery__counter">1 / 5</div>
+                        <button class="gallery__fullscreen-btn">
+                            <i class="fas fa-expand"></i> View Fullscreen
+                        </button>
                     </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_150_78521e86-2f2b-45e1-baf4-25869a3f8492.jpg">
-                        <img src="../assets/images/libera/imgi_150_78521e86-2f2b-45e1-baf4-25869a3f8492.jpg" alt="Kitchen">
-                    </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_151_9bda3cef-e9ff-4267-adf9-40f4b8b52ddc.jpg">
-                        <img src="../assets/images/libera/imgi_151_9bda3cef-e9ff-4267-adf9-40f4b8b52ddc.jpg" alt="Bedroom">
-                    </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_152_6443fbf9-a08d-444d-96d6-924ea9457890.jpg">
-                        <img src="../assets/images/libera/imgi_152_6443fbf9-a08d-444d-96d6-924ea9457890.jpg" alt="Bathroom">
-                    </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_153_0ff3eda1-10e7-4584-874d-7925d59c8315.jpg">
-                        <img src="../assets/images/libera/imgi_153_0ff3eda1-10e7-4584-874d-7925d59c8315.jpg" alt="Sea View">
+                    <div class="gallery__thumbnails">
+                        <div class="gallery__thumbnail gallery__thumbnail--active" data-image="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg">
+                            <img src="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg" alt="Living Area" class="gallery__thumbnail-image">
+                        </div>
+                        <div class="gallery__thumbnail" data-image="../assets/images/libera/imgi_150_78521e86-2f2b-45e1-baf4-25869a3f8492.jpg">
+                            <img src="../assets/images/libera/imgi_150_78521e86-2f2b-45e1-baf4-25869a3f8492.jpg" alt="Kitchen" class="gallery__thumbnail-image">
+                        </div>
+                        <div class="gallery__thumbnail" data-image="../assets/images/libera/imgi_151_9bda3cef-e9ff-4267-adf9-40f4b8b52ddc.jpg">
+                            <img src="../assets/images/libera/imgi_151_9bda3cef-e9ff-4267-adf9-40f4b8b52ddc.jpg" alt="Bedroom" class="gallery__thumbnail-image">
+                        </div>
+                        <div class="gallery__thumbnail" data-image="../assets/images/libera/imgi_152_6443fbf9-a08d-444d-96d6-924ea9457890.jpg">
+                            <img src="../assets/images/libera/imgi_152_6443fbf9-a08d-444d-96d6-924ea9457890.jpg" alt="Bathroom" class="gallery__thumbnail-image">
+                        </div>
+                        <div class="gallery__thumbnail" data-image="../assets/images/libera/imgi_153_0ff3eda1-10e7-4584-874d-7925d59c8315.jpg">
+                            <img src="../assets/images/libera/imgi_153_0ff3eda1-10e7-4584-874d-7925d59c8315.jpg" alt="Sea View" class="gallery__thumbnail-image">
+                        </div>
                     </div>
                 </div>
             </div>

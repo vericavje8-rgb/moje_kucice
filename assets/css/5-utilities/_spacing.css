@@ -1,0 +1,103 @@
+/* ==========================================================================
+   SPACING UTILITIES
+   ========================================================================== */
+
+/* Margin Utilities */
+.u-margin-0 { margin: 0; }
+.u-margin-xs { margin: var(--space-xs); }
+.u-margin-sm { margin: var(--space-sm); }
+.u-margin-md { margin: var(--space-md); }
+.u-margin-lg { margin: var(--space-lg); }
+.u-margin-xl { margin: var(--space-xl); }
+.u-margin-2xl { margin: var(--space-2xl); }
+.u-margin-3xl { margin: var(--space-3xl); }
+
+/* Margin Top */
+.u-margin-top-0 { margin-top: 0; }
+.u-margin-top-xs { margin-top: var(--space-xs); }
+.u-margin-top-sm { margin-top: var(--space-sm); }
+.u-margin-top-md { margin-top: var(--space-md); }
+.u-margin-top-lg { margin-top: var(--space-lg); }
+.u-margin-top-xl { margin-top: var(--space-xl); }
+.u-margin-top-2xl { margin-top: var(--space-2xl); }
+.u-margin-top-3xl { margin-top: var(--space-3xl); }
+
+/* Margin Bottom */
+.u-margin-bottom-0 { margin-bottom: 0; }
+.u-margin-bottom-xs { margin-bottom: var(--space-xs); }
+.u-margin-bottom-sm { margin-bottom: var(--space-sm); }
+.u-margin-bottom-md { margin-bottom: var(--space-md); }
+.u-margin-bottom-lg { margin-bottom: var(--space-lg); }
+.u-margin-bottom-xl { margin-bottom: var(--space-xl); }
+.u-margin-bottom-2xl { margin-bottom: var(--space-2xl); }
+.u-margin-bottom-3xl { margin-bottom: var(--space-3xl); }
+
+/* Margin Left */
+.u-margin-left-0 { margin-left: 0; }
+.u-margin-left-xs { margin-left: var(--space-xs); }
+.u-margin-left-sm { margin-left: var(--space-sm); }
+.u-margin-left-md { margin-left: var(--space-md); }
+.u-margin-left-lg { margin-left: var(--space-lg); }
+.u-margin-left-xl { margin-left: var(--space-xl); }
+
+/* Margin Right */
+.u-margin-right-0 { margin-right: 0; }
+.u-margin-right-xs { margin-right: var(--space-xs); }
+.u-margin-right-sm { margin-right: var(--space-sm); }
+.u-margin-right-md { margin-right: var(--space-md); }
+.u-margin-right-lg { margin-right: var(--space-lg); }
+.u-margin-right-xl { margin-right: var(--space-xl); }
+
+/* Padding Utilities */
+.u-padding-0 { padding: 0; }
+.u-padding-xs { padding: var(--space-xs); }
+.u-padding-sm { padding: var(--space-sm); }
+.u-padding-md { padding: var(--space-md); }
+.u-padding-lg { padding: var(--space-lg); }
+.u-padding-xl { padding: var(--space-xl); }
+.u-padding-2xl { padding: var(--space-2xl); }
+.u-padding-3xl { padding: var(--space-3xl); }
+
+/* Padding Top */
+.u-padding-top-0 { padding-top: 0; }
+.u-padding-top-xs { padding-top: var(--space-xs); }
+.u-padding-top-sm { padding-top: var(--space-sm); }
+.u-padding-top-md { padding-top: var(--space-md); }
+.u-padding-top-lg { padding-top: var(--space-lg); }
+.u-padding-top-xl { padding-top: var(--space-xl); }
+.u-padding-top-2xl { padding-top: var(--space-2xl); }
+.u-padding-top-3xl { padding-top: var(--space-3xl); }
+
+/* Padding Bottom */
+.u-padding-bottom-0 { padding-bottom: 0; }
+.u-padding-bottom-xs { padding-bottom: var(--space-xs); }
+.u-padding-bottom-sm { padding-bottom: var(--space-sm); }
+.u-padding-bottom-md { padding-bottom: var(--space-md); }
+.u-padding-bottom-lg { padding-bottom: var(--space-lg); }
+.u-padding-bottom-xl { padding-bottom: var(--space-xl); }
+.u-padding-bottom-2xl { padding-bottom: var(--space-2xl); }
+.u-padding-bottom-3xl { padding-bottom: var(--space-3xl); }
+
+/* Padding Left */
+.u-padding-left-0 { padding-left: 0; }
+.u-padding-left-xs { padding-left: var(--space-xs); }
+.u-padding-left-sm { padding-left: var(--space-sm); }
+.u-padding-left-md { padding-left: var(--space-md); }
+.u-padding-left-lg { padding-left: var(--space-lg); }
+.u-padding-left-xl { padding-left: var(--space-xl); }
+
+/* Padding Right */
+.u-padding-right-0 { padding-right: 0; }
+.u-padding-right-xs { padding-right: var(--space-xs); }
+.u-padding-right-sm { padding-right: var(--space-sm); }
+.u-padding-right-md { padding-right: var(--space-md); }
+.u-padding-right-lg { padding-right: var(--space-lg); }
+.u-padding-right-xl { padding-right: var(--space-xl); }
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+    .u-margin-lg\@mobile { margin: var(--space-lg); }
+    .u-margin-bottom-lg\@mobile { margin-bottom: var(--space-lg); }
+    .u-padding-lg\@mobile { padding: var(--space-lg); }
+    .u-padding-top-lg\@mobile { padding-top: var(--space-lg); }
+}
