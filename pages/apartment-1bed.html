@@ -2,11 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartman App1 - Luxe Residences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Libera Apartment - Seaside 1-Bedroom in Novigrad, Croatia | Moje Kucice</title>
+    <meta name="title" content="Libera Apartment - Seaside 1-Bedroom in Novigrad, Croatia">
+    <meta name="description" content="Beautiful 1-bedroom apartment right on the waterfront in Novigrad, Croatia. Direct beach access, sea views, fully equipped kitchen. Book your Adriatic getaway now!">
+    <meta name="keywords" content="Novigrad apartment, Croatia vacation rental, seaside accommodation, Adriatic Sea, beach apartment, Istria">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Moje Kucice">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mojeKucice.com/apartment-libera">
+    <meta property="og:title" content="Libera Apartment - Seaside 1-Bedroom in Novigrad, Croatia">
+    <meta property="og:description" content="Beautiful 1-bedroom apartment right on the waterfront in Novigrad, Croatia. Direct beach access, sea views, fully equipped kitchen.">
+    <meta property="og:image" content="../assets/images/libera/banner.jpg">
+    <meta property="og:site_name" content="Moje Kucice">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.mojeKucice.com/apartment-libera">
+    <meta property="twitter:title" content="Libera Apartment - Seaside 1-Bedroom in Novigrad, Croatia">
+    <meta property="twitter:description" content="Beautiful 1-bedroom apartment right on the waterfront in Novigrad, Croatia. Direct beach access, sea views, fully equipped kitchen.">
+    <meta property="twitter:image" content="../assets/images/libera/banner.jpg">
+    
+    <!-- Performance & Security -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Apartment",
+        "name": "Libera Apartment",
+        "description": "Beautiful 1-bedroom apartment right on the waterfront in Novigrad, Croatia with direct beach access and sea views.",
+        "image": "../assets/images/libera/banner.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Novigrad",
+            "addressRegion": "Istria",
+            "addressCountry": "HR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 45.3167,
+            "longitude": 13.5667
+        },
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Beach Access"},
+            {"@type": "LocationFeatureSpecification", "name": "Sea View"},
+            {"@type": "LocationFeatureSpecification", "name": "WiFi"},
+            {"@type": "LocationFeatureSpecification", "name": "Kitchen"},
+            {"@type": "LocationFeatureSpecification", "name": "Air Conditioning"}
+        ],
+        "numberOfRooms": 1,
+        "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": "45",
+            "unitCode": "MTK"
+        },
+        "occupancy": {
+            "@type": "QuantitativeValue",
+            "maxValue": 2
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -87,23 +161,35 @@
         <div class="container">
             <div class="gallery-grid">
                 <div class="main-image">
-                    <img src="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg" alt="Apartman App1 Living Area" id="main-gallery-image">
+                    <img src="../assets/images/libera/banner.jpg" 
+                         alt="Libera Apartment - Beautiful seaside living area with sea view in Novigrad, Croatia" 
+                         id="main-gallery-image"
+                         loading="eager"
+                         fetchpriority="high"
+                         onload="this.classList.add('loaded')"
+                         onerror="this.src='../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg'">
                 </div>
                 <div class="gallery-thumbnails">
-                    <div class="thumbnail active" data-image="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg">
-                        <img src="../assets/images/libera/imgi_149_88d39aff-1eb8-43a4-935a-89cb2657ca4f.jpg" alt="Living Area">
+                    <div class="thumbnail active" data-image="../assets/images/libera/banner.jpg">
+                        <img src="../assets/images/libera/first.jpg" 
+                             alt="Libera Apartment main view" 
+                             loading="lazy"
+                             onload="this.classList.add('loaded')">
                     </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_150_78521e86-2f2b-45e1-baf4-25869a3f8492.jpg">
-                        <img src="../assets/images/libera/imgi_150_78521e86-2f2b-45e1-baf4-25869a3f8492.jpg" alt="Kitchen">
+                    <div class="thumbnail" data-image="../assets/images/libera/02-kitchen.jpg">
+                        <img src="../assets/images/libera/02-kitchen.jpg" alt="Kitchen">
                     </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_151_9bda3cef-e9ff-4267-adf9-40f4b8b52ddc.jpg">
-                        <img src="../assets/images/libera/imgi_151_9bda3cef-e9ff-4267-adf9-40f4b8b52ddc.jpg" alt="Bedroom">
+                    <div class="thumbnail" data-image="../assets/images/libera/03-bedroom.jpg">
+                        <img src="../assets/images/libera/03-bedroom.jpg" alt="Bedroom">
                     </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_152_6443fbf9-a08d-444d-96d6-924ea9457890.jpg">
-                        <img src="../assets/images/libera/imgi_152_6443fbf9-a08d-444d-96d6-924ea9457890.jpg" alt="Bathroom">
+                    <div class="thumbnail" data-image="../assets/images/libera/04-bathroom.jpg">
+                        <img src="../assets/images/libera/04-bathroom.jpg" alt="Bathroom">
                     </div>
-                    <div class="thumbnail" data-image="../assets/images/libera/imgi_153_0ff3eda1-10e7-4584-874d-7925d59c8315.jpg">
-                        <img src="../assets/images/libera/imgi_153_0ff3eda1-10e7-4584-874d-7925d59c8315.jpg" alt="Sea View">
+                    <div class="thumbnail" data-image="../assets/images/libera/05-sea-view.jpg">
+                        <img src="../assets/images/libera/05-sea-view.jpg" alt="Sea View">
+                    </div>
+                    <div class="thumbnail" data-image="../assets/images/libera/06-terrace.jpg">
+                        <img src="../assets/images/libera/06-terrace.jpg" alt="Terrace">
                     </div>
                 </div>
             </div>
@@ -116,9 +202,10 @@
             <div class="details-grid">
                 <div class="details-main">
                     <div class="details-section">
-                        <h2>About Apartman App1</h2>
-                        <p class="lead">Experience authentic Croatian coastal living in this charming 1-bedroom apartment located steps from the sea and historic Novigrad town center. This cozy retreat offers everything needed for a perfect Adriatic getaway.</p>
-                        <p>Situated on the first floor with direct proximity to the sea, this apartment features a comfortable bedroom, fully equipped kitchen with dining area, and modern bathroom. Guests enjoy a shared terrace with individual seating areas, perfect for morning coffee or evening relaxation while listening to the gentle sounds of the Adriatic Sea.</p>
+                        <h2>About Apartman App1 - Libera</h2>
+                        <p class="lead">Experience authentic Croatian coastal living in this charming 1-bedroom apartment located directly by the sea, just steps from Novigrad's historic old town center. This intimate seaside retreat offers everything needed for a perfect Adriatic getaway.</p>
+                        <p>Positioned on the first floor with immediate proximity to the sea, this cozy apartment features one comfortable bedroom, a fully equipped kitchen with dining area, and a modern bathroom. The shared terrace provides each apartment with its own private corner - perfect for morning coffee or evening relaxation while enjoying stunning sea views and listening to the gentle sounds of the Adriatic waves.</p>
+                        <p>Located right on the waterfront with direct beach access, you can step out and be on the beach within moments. The historic charm of Novigrad's old town is just a pleasant stroll away, offering authentic Croatian dining, local markets, and cultural experiences.</p>
                     </div>
 
                     <div class="details-section">
@@ -163,27 +250,30 @@
                                 <ul>
                                     <li>Free WiFi internet</li>
                                     <li>Satellite TV</li>
-                                    <li>Air conditioning & heating</li>
-                                    <li>Fully equipped kitchen</li>
-                                    <li>Refrigerator & microwave</li>
-                                    <li>Coffee maker & kettle</li>
-                                    <li>Dining table for 2</li>
-                                    <li>Hair dryer</li>
-                                    <li>Towels & bed linens</li>
-                                    <li>Storage wardrobe</li>
+                                    <li>Air conditioning & heating system</li>
+                                    <li>Fully equipped kitchen with cooking space</li>
+                                    <li>Refrigerator & microwave oven</li>
+                                    <li>Coffee maker & electric kettle</li>
+                                    <li>Dining table & complete tableware</li>
+                                    <li>Hair dryer & hot water</li>
+                                    <li>Fresh towels, bed linens, soap & toilet paper</li>
+                                    <li>Storage wardrobe with hangers</li>
+                                    <li>Basic amenities provided</li>
+                                    <li>Fire extinguisher & first aid kit</li>
                                 </ul>
                             </div>
                             <div class="amenity-category">
                                 <h4><i class="fas fa-map-marked-alt"></i> Location</h4>
                                 <ul>
-                                    <li>Steps from the sea</li>
-                                    <li>Near historic town center</li>
-                                    <li>Beach access - beachfront</li>
-                                    <li>Shared terrace with sea view</li>
-                                    <li>Walking distance to restaurants</li>
-                                    <li>Public parking nearby (€7/day)</li>
-                                    <li>Pet-friendly (€25 fee)</li>
-                                    <li>Luggage storage available</li>
+                                    <li>Right on the waterfront - beside the water</li>
+                                    <li>Direct beach access - beachfront location</li>
+                                    <li>Steps from historic Novigrad old town</li>
+                                    <li>Shared terrace with private corner & sea views</li>
+                                    <li>Walking distance to local restaurants & cafés</li>
+                                    <li>Dedicated workspace in shared area</li>
+                                    <li>Public parking 100-500m away (€7/day)</li>
+                                    <li>Pet-friendly with advance notice (€25/stay)</li>
+                                    <li>Enjoy nearby beach immediately</li>
                                 </ul>
                             </div>
                         </div>
@@ -196,25 +286,106 @@
                             <h3>Reserve Your Stay</h3>
                             <div class="price-display">€50 <span>/ night</span></div>
                         </div>
-                        <form class="booking-form">
+                        <form class="booking-form" id="libera-booking-form" novalidate>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="checkin">Check-in</label>
-                                    <input type="date" id="checkin" class="form-input" required>
+                                    <label for="checkin">Check-in *</label>
+                                    <input type="date" 
+                                           id="checkin" 
+                                           name="checkin"
+                                           class="form-input" 
+                                           required 
+                                           aria-describedby="checkin-error"
+                                           autocomplete="off">
+                                    <div id="checkin-error" class="error-message" role="alert"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="checkout">Check-out</label>
-                                    <input type="date" id="checkout" class="form-input" required>
+                                    <label for="checkout">Check-out *</label>
+                                    <input type="date" 
+                                           id="checkout" 
+                                           name="checkout"
+                                           class="form-input" 
+                                           required
+                                           aria-describedby="checkout-error"
+                                           autocomplete="off">
+                                    <div id="checkout-error" class="error-message" role="alert"></div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="guests">Guests</label>
-                                <select id="guests" class="form-select">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" class="form-select" required>
+                                    <option value="">Select guests</option>
                                     <option value="1">1 Guest</option>
                                     <option value="2">2 Guests</option>
                                 </select>
+                                <div id="guests-error" class="error-message" role="alert"></div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-large">Book Now</button>
+                            <div class="form-group">
+                                <label for="guest-name">Full Name *</label>
+                                <input type="text" 
+                                       id="guest-name" 
+                                       name="guest-name"
+                                       class="form-input" 
+                                       required
+                                       placeholder="Enter your full name"
+                                       autocomplete="name">
+                                <div id="name-error" class="error-message" role="alert"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-email">Email Address *</label>
+                                <input type="email" 
+                                       id="guest-email" 
+                                       name="guest-email"
+                                       class="form-input" 
+                                       required
+                                       placeholder="your@email.com"
+                                       autocomplete="email">
+                                <div id="email-error" class="error-message" role="alert"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-phone">Phone Number</label>
+                                <input type="tel" 
+                                       id="guest-phone" 
+                                       name="guest-phone"
+                                       class="form-input" 
+                                       placeholder="+385 xx xxx xxxx"
+                                       autocomplete="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" 
+                                         name="special-requests"
+                                         class="form-textarea" 
+                                         rows="3" 
+                                         placeholder="Any special requests or questions?"></textarea>
+                            </div>
+                            <div class="booking-summary" id="booking-summary" style="display: none;">
+                                <div class="summary-row">
+                                    <span>Dates:</span>
+                                    <span id="summary-dates">-</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Nights:</span>
+                                    <span id="summary-nights">0</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Guests:</span>
+                                    <span id="summary-guests">-</span>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Total:</span>
+                                    <span id="summary-total">€0</span>
+                                </div>
+                            </div>
+                            <button type="submit" 
+                                    class="btn btn-primary btn-large" 
+                                    id="submit-booking"
+                                    disabled>
+                                <span class="btn-text">Check Availability</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
+                            </button>
                         </form>
                         <div class="booking-note">
                             <p><i class="fas fa-shield-alt"></i> Free cancellation up to 24 hours before check-in</p>
@@ -232,7 +403,7 @@
                                 </div>
                             </a>
                             <a href="apartment-3bed.html" class="related-item">
-                                <img src="../assets/images/tomas/imgi_119_35ef016c-6461-4911-9cd8-b539254d97e8.jpg" alt="Apartman App3">
+                                <img src="../assets/images/tomas/imgi_120_8b6044ca-6e74-44d4-9d7e-9179b790b00f.jpg" alt="Apartman App3">
                                 <div class="related-info">
                                     <h5>Apartman App3</h5>
                                     <p>€80/night</p>
