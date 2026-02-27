@@ -2,11 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartman App2 - Luxe Residences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Alvin Apartment - Spacious 2-Bedroom in Novigrad, Croatia | Moje Kucice</title>
+    <meta name="title" content="Alvin Apartment - Spacious 2-Bedroom in Novigrad, Croatia">
+    <meta name="description" content="Spacious 2-bedroom apartment right on the waterfront in Novigrad, Croatia. Perfect for families, washing machine, sea views, fully equipped kitchen. Book your Adriatic vacation now!">
+    <meta name="keywords" content="Novigrad 2-bedroom apartment, family vacation Croatia, seaside accommodation, Adriatic Sea, beach apartment with washing machine, Istria">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Moje Kucice">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mojeKucice.com/apartment-alvin">
+    <meta property="og:title" content="Alvin Apartment - Spacious 2-Bedroom in Novigrad, Croatia">
+    <meta property="og:description" content="Spacious 2-bedroom apartment right on the waterfront in Novigrad, Croatia. Perfect for families with washing machine and sea views.">
+    <meta property="og:image" content="../assets/images/alvin/banner.jpg">
+    <meta property="og:site_name" content="Moje Kucice">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.mojeKucice.com/apartment-alvin">
+    <meta property="twitter:title" content="Alvin Apartment - Spacious 2-Bedroom in Novigrad, Croatia">
+    <meta property="twitter:description" content="Spacious 2-bedroom apartment right on the waterfront in Novigrad, Croatia. Perfect for families with washing machine and sea views.">
+    <meta property="twitter:image" content="../assets/images/alvin/banner.jpg">
+    
+    <!-- Performance & Security -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Apartment",
+        "name": "Alvin Apartment",
+        "description": "Spacious 2-bedroom apartment right on the waterfront in Novigrad, Croatia with washing machine and family-friendly amenities.",
+        "image": "../assets/images/alvin/banner.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Novigrad",
+            "addressRegion": "Istria",
+            "addressCountry": "HR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 45.3167,
+            "longitude": 13.5667
+        },
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Beach Access"},
+            {"@type": "LocationFeatureSpecification", "name": "Sea View"},
+            {"@type": "LocationFeatureSpecification", "name": "WiFi"},
+            {"@type": "LocationFeatureSpecification", "name": "Kitchen"},
+            {"@type": "LocationFeatureSpecification", "name": "Air Conditioning"},
+            {"@type": "LocationFeatureSpecification", "name": "Washing Machine"}
+        ],
+        "numberOfRooms": 2,
+        "floorSize": {
+            "@type": "QuantitativeValue",
+            "value": "65",
+            "unitCode": "MTK"
+        },
+        "occupancy": {
+            "@type": "QuantitativeValue",
+            "maxValue": 4
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation Section -->
@@ -58,11 +133,11 @@
             </div>
             <div class="apartment-header">
                 <div class="apartment-title-section">
-                    <h1>Apartman App2</h1>
-                    <p class="apartment-subtitle">Comfortable 2-bedroom seaside retreat with modern amenities</p>
+                    <h1>Apartman App2 - Alvin</h1>
+                    <p class="apartment-subtitle">Spacious 2-bedroom seaside family retreat with washing machine</p>
                     <div class="apartment-location-detail">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Novigrad, Croatia • Beachfront Location</span>
+                        <span>Novigrad, Croatia • Waterfront Location</span>
                     </div>
                 </div>
                 <div class="apartment-price-section">
@@ -92,11 +167,20 @@
         <div class="container">
             <div class="gallery-grid">
                 <div class="main-image">
-                    <img src="../assets/images/alvin/imgi_120_50c31fdd-4391-494e-ba3c-8e0683d2e25e.jpg" alt="Apartman App2 Living Area" id="main-gallery-image">
+                    <img src="../assets/images/alvin/banner.jpg" 
+                         alt="Alvin Apartment - Spacious seaside family apartment with two bedrooms in Novigrad, Croatia" 
+                         id="main-gallery-image"
+                         loading="eager"
+                         fetchpriority="high"
+                         onload="this.classList.add('loaded')"
+                         onerror="this.src='../assets/images/alvin/imgi_120_50c31fdd-4391-494e-ba3c-8e0683d2e25e.jpg'">
                 </div>
                 <div class="gallery-thumbnails">
-                    <div class="thumbnail active" data-image="../assets/images/alvin/imgi_120_50c31fdd-4391-494e-ba3c-8e0683d2e25e.jpg">
-                        <img src="../assets/images/alvin/imgi_120_50c31fdd-4391-494e-ba3c-8e0683d2e25e.jpg" alt="Living Area">
+                    <div class="thumbnail active" data-image="../assets/images/alvin/banner.jpg">
+                        <img src="../assets/images/alvin/first.jpg" 
+                             alt="Alvin Apartment main view" 
+                             loading="lazy"
+                             onload="this.classList.add('loaded')">
                     </div>
                     <div class="thumbnail" data-image="../assets/images/alvin/imgi_121_2aaec2c5-3798-42c8-ab47-e4f296ec8b03.jpg">
                         <img src="../assets/images/alvin/imgi_121_2aaec2c5-3798-42c8-ab47-e4f296ec8b03.jpg" alt="Kitchen">
@@ -109,6 +193,9 @@
                     </div>
                     <div class="thumbnail" data-image="../assets/images/alvin/imgi_124_5453c3dc-59dd-4eb2-bd0e-ab6de2782350.jpg">
                         <img src="../assets/images/alvin/imgi_124_5453c3dc-59dd-4eb2-bd0e-ab6de2782350.jpg" alt="Sea View">
+                    </div>
+                    <div class="thumbnail" data-image="../assets/images/alvin/imgi_125_65cc06e2-00d6-4dc4-99b3-9c81bfaef1fc.jpg">
+                        <img src="../assets/images/alvin/imgi_125_65cc06e2-00d6-4dc4-99b3-9c81bfaef1fc.jpg" alt="Bathroom">
                     </div>
                 </div>
             </div>
@@ -123,9 +210,10 @@
             <div class="details-grid">
                 <div class="details-main">
                     <div class="details-section">
-                        <h2>About Apartman App2</h2>
-                        <p class="lead">Discover comfort in this spacious 2-bedroom coastal apartment located directly by the sea near Novigrad's historic old town center. This first-floor retreat is perfect for families or groups seeking authentic Croatian hospitality with modern amenities.</p>
-                        <p>The apartment features two comfortable bedrooms each with double beds (1.6x2m), a fully equipped kitchen with dining area, and a modern bathroom with washing machine. Guests enjoy access to a shared terrace where each apartment has its own private corner with sea views. The apartment includes satellite TV, air conditioning, Wi-Fi, and all essential amenities for a perfect Adriatic getaway.</p>
+                        <h2>About Apartman App2 - Alvin</h2>
+                        <p class="lead">Experience spacious Croatian coastal living in this charming 2-bedroom apartment located directly by the sea, just steps from Novigrad's historic old town center. This family-friendly first-floor retreat offers everything needed for a perfect Adriatic family vacation.</p>
+                        <p>Positioned on the first floor with immediate proximity to the sea, this generous apartment features two comfortable bedrooms, a fully equipped kitchen with dining area, and a modern bathroom with washing machine - perfect for longer stays. The shared terrace provides each apartment with its own private corner, ideal for family meals or evening relaxation while enjoying stunning sea views and listening to the gentle sounds of the Adriatic waves.</p>
+                        <p>Located right on the waterfront with direct beach access, your family can step out and be on the beach within moments. The historic charm of Novigrad's old town is just a pleasant walk away, offering authentic Croatian dining, local markets, and cultural experiences perfect for families with children.</p>
                     </div>
 
                     <div class="details-section">
@@ -148,8 +236,8 @@
                             <div class="feature-item">
                                 <i class="fas fa-expand-arrows-alt"></i>
                                 <div>
-                                    <h4>75 m²</h4>
-                                    <p>Comfortable space for up to 4 guests</p>
+                                    <h4>65 m²</h4>
+                                    <p>Spacious layout for families up to 4 guests</p>
                                 </div>
                             </div>
                             <div class="feature-item">
@@ -234,16 +322,16 @@
                         <h4>Other Apartments</h4>
                         <div class="related-grid">
                             <a href="apartment-1bed.html" class="related-item">
-                                <img src="../assets/images/libera/imgi_115_78e0e9a3-b79e-4ad4-b11b-f96a8c5a8b6b.jpg" alt="Apartman App1">
+                                <img src="../assets/images/libera/banner.jpg" alt="Libera Seaside Apartment">
                                 <div class="related-info">
-                                    <h5>Apartman App1</h5>
+                                    <h5>Libera - 1 Bedroom</h5>
                                     <p>€50/night</p>
                                 </div>
                             </a>
                             <a href="apartment-3bed.html" class="related-item">
-                                <img src="../assets/images/tomas/imgi_125_ee8e98df-c9b9-4b36-8a97-2ba4b48c8b9b.jpg" alt="Apartman App3">
+                                <img src="../assets/images/tomas/first.jpg" alt="Tomas Family Apartment">
                                 <div class="related-info">
-                                    <h5>Apartman App3</h5>
+                                    <h5>Tomas - 3 Bedrooms</h5>
                                     <p>€80/night</p>
                                 </div>
                             </a>
@@ -265,10 +353,10 @@
                 </a>
                 <div class="apartment-nav">
                     <a href="apartment-1bed.html" class="nav-btn">
-                        <i class="fas fa-chevron-left"></i> Apartman App1
+                        <i class="fas fa-chevron-left"></i> Libera - 1 Bedroom
                     </a>
                     <a href="apartment-3bed.html" class="nav-btn">
-                        Apartman App3 <i class="fas fa-chevron-right"></i>
+                        Tomas - 3 Bedrooms <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
@@ -290,8 +378,8 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../index.html#apartments">All Apartments</a></li>
-                        <li><a href="apartment-1bed.html">Apartman App1</a></li>
-                        <li><a href="apartment-3bed.html">Apartman App3</a></li>
+                        <li><a href="apartment-1bed.html">Libera - 1 Bedroom</a></li>
+                        <li><a href="apartment-3bed.html">Tomas - 3 Bedrooms</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
